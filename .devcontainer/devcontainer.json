@@ -1,0 +1,20 @@
+{
+    // devcontainerの名前
+    "name": "workspace",
+    // devcontainerを立ち上げる時にどのdocker-composeをファイルを参照するか
+    "dockerComposeFile": "docker-compose.yml",
+    // 複数コンテナを扱う際にどのコンテナをdevcontainerとして扱うかを設定うする
+    "service": "workspace",
+    // コンテナを起動した時に、どの階層から始めるのかを指定する
+    "workspaceFolder": "/home/vscode/workspace",
+    // コンテナ内でログインするユーザー名を指定する
+    "remoteUser": "vscode",
+    // vscodeのウィンドウを閉じた時に実行するアクションを指定する（今回はdocker-composeを停止する）
+    "shutdownAction": "stopCompose",
+    // コンテナ内で使用するvscodeの拡張機能を設定する
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-initializr",
+        "vscjava.vscode-gradle"
+    ]
+}
