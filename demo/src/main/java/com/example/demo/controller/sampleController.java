@@ -7,38 +7,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class sampleController {
 
+    // ログイン
     public String login() {
         return "index";
     }
 
     @RequestMapping("/list")
     public String list() {
-        return "list";
+        return "/pages/list";
     }
 
     @RequestMapping("/create")
     public String create() {
-        return "create";
+        return "/pages/create";
     }
 
     @RequestMapping("/improvement")
     public String improvement() {
-        return "improvement";
+        return "/pages/improvement";
     }
 
     @RequestMapping("/schedule")
     public String schedule() {
-        return "schedule";
+        return "/pages/schedule";
     }
 
     @RequestMapping("/result")
     public String result() {
-        return "result";
+        return "/pages/result";
     }
 
     @RequestMapping("/management")
     public String management() {
-        return "management";
+        return "/pages/management";
     }
 
 }
